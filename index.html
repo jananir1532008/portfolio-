@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Janani R - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Theme Toggle Button -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+
+  <!-- NAVIGATION & HERO SECTION -->
+  <header class="main-header">
+    <img src="janani.jpg" alt="Janani R Profile" class="hero-image">
+    <nav class="navbar">
+      <h2 class="logo">Janani<span>.R</span></h2>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero-container">
+      <div class="hero-text">
+        <h1>Hello, I'm <span>Janani R</span></h1>
+        <h3>B.Tech Information Technology</h3>
+        <p class="college-name">KPR Institute of Engineering and Technology</p>
+        
+        <div class="contact-pill">
+          <span class="icon">📧</span>
+          <a href="mailto:25it064@kpriet.ac.in">25it064@kpriet.ac.in</a>
+        </div>
+
+        <p class="bio">
+          I am passionate about software engineering, web architectures, core programming, and modern interface development.
+        </p>
+        <div class="btn-group">
+          <a href="project.html" class="cta-btn">View Projects</a>
+          <a href="mailto:25it064@kpriet.ac.in" class="cta-btn secondary-btn">Contact Me</a>
+        </div>
+      </div>
+      
+      <div class="hero-image">
+        <!-- Unga round photo-va intha folder-la pottu 'janani.jpg' nu name maathunga -->
+        <img src="janani.jpg" alt="Janani R Profile">
+      </div>
+    </section>
+  </header>
+
+  <!-- TECHNICAL SKILLS SECTION -->
+  <main class="main-content">
+    <section class="skills-section">
+      <h2 class="section-title">Technical Expertise</h2>
+      
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Core Programming</h3>
+          <p>C, C++, Java, Data Structures</p>
+        </div>
+        <div class="skill-card">
+          <h3>Web Architectures</h3>
+          <p>HTML5, CSS3, JavaScript, Responsive Design</p>
+        </div>
+        <div class="skill-card">
+          <h3>Database & Analytics</h3>
+          <p>SQL, Python Data Frameworks</p>
+        </div>
+        <div class="skill-card feature-highlight">
+          <h3>Tools & Platforms</h3>
+          <p>Power BI, Git, GitHub, VS Code Ecosystem</p>
+        </div>
+        <div class="skill-card">
+          <h3>Professional Skills</h3>
+          <p>Analytical Thinking, Problem Solving, Collaborative Teamwork</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <p>&copy; 2026 Janani R. All rights reserved.</p>
+  </footer>
+
+  <!-- Theme Toggle Logic Script -->
+  <script>
+    const toggleBtn = document.getElementById('themeToggle');
+    toggleBtn.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      toggleBtn.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>
