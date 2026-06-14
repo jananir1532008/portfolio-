@@ -1,0 +1,11 @@
+<section class="contact-section">
+    <h1>Contact Me</h1>
+    <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>Name: Janani R</p>
+        <p>Email: 25it064@kpriet.ac.in</p>
+        <p>College: KPR Institute of Engineering and Technology</p>
+        <p>LinkedIn: <a href="#">View LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/jananir1532008">View GitHub Profile</a></p>
+    </div>
+</section>
